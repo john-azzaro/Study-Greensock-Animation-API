@@ -1,0 +1,5 @@
+ *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;                        /* all numbers Poppins with default of sans-serif*/
+    font-weight: normal;                                       /* set font boldness to normal */
+}
