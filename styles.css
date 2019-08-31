@@ -3,3 +3,10 @@
     font-family: 'Poppins', sans-serif;                        /* all numbers Poppins with default of sans-serif*/
     font-weight: normal;                                       /* set font boldness to normal */
 }
+
+.slider {                                       /* For the image to be animated... */
+    position: absolute;                         /* to place the div on top of everything, set position to absolute (out side normal flow) */
+    top: 0;                                     /* set top to 0...*/
+    left: 0;                                    /* set left to 0 so picture is top left now. */
+    height: 100vh;                              /* with the slider being 100 percent of the viewport size. */ 
+}

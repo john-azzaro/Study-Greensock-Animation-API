@@ -7,7 +7,12 @@ PHASE 1: HTML
 2. Create section with a "hero" class containing large collaboration image (which will be a focal point for our landing page)
    and a h1 element with a headline "Working Together Gets Results"
 3. Create a div with the class "slider".
-    *   This element will help transition the background element on top of everything.
+    *   This element will help transition the background element on top of everything, so this needs to be kept seperate 
+        from the hero section.
+
+PHASE 2: CSS Styles
+===================
+4. 
 
 
 
