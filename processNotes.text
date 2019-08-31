@@ -51,6 +51,7 @@ PHASE 3: Hero Style section
         object-fit: cover;              <== Setting object fit to cover, it will show the area we have for hero (i.e. 60%/100%) but it will not be distorted. */
     }
 
+10. style headline
 
 
 

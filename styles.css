@@ -40,6 +40,18 @@ nav {
 .hero {                                                       /* from the section setting justify content and align items, the image will cover... you need to adjust the hero section */
     height: 70%;
     width: 100%;
+    position: relative;                                      /* added with the .hero::after so that it sticks to the black background. */
+}
+
+.hero::after {                                               /* if you want to alter the image (or photoshop it), use ::after to generate another div (this just generates a new div) */
+    content: "";                                             /* the content here is blank for now...*/
+    background: black;                                     /* a black background will be the base for the image tint.*/
+    width: 100%;                                             /* and be the whole height and width of the image....*/
+    height: 100%;
+    position: absolute;                                      /* and be positioned directly over the hero image (i.e. absolute, left 0, top 0.*/
+    left: 0;
+    top: 0; 
+    opacity: 0.4;                                            /* then simply set the opacity for the image you wish.*/
 }
 
 section {                                                     /* For the section that holds the collab image and the subtitles ...*/
@@ -47,4 +59,14 @@ section {                                                     /* For the section
     height: 80vh;                                             /* and set the height so its 80% of the viewport (remember that the nav takes 10% already) */
     justify-content: center;                                  /* centering the image */
     align-items: center;                                      /* centering the image */       
+}
+
+.headline {
+    position: absolute;                                      /* set posiotion to absolute so it is outside normal flow and we can move it where-ever we want */
+    top: 70%;
+    left: 20%;
+    font-size: 100px;
+    transform: translate(-20%, -70%);                          /* reposition the text */     
+    color: white;
+    z-index: 1;                                                /* added when we set opactiy tint and want to keep the headline in a good solid white color untinted.*/
 }
