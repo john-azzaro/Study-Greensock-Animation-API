@@ -16,5 +16,13 @@
 
 nav {
     display: grid;                                            /* *display set to grid */
-    grid-template-columns:  10% 1fr 1fr 10%;                  /* creates 4 columns that we can place our elements in. */
+    grid-template-columns:  10% 1fr 1fr 10%;                  /* creates 4 columns that we can place our elements in (bascially, 10% is the side padding, the 1frs are for the nav content). */
+    min-height: 10vh;                                         /* and the nav area will be 10% of the viewport size*/
+    color: white;                                          /* and the text will be white.*/
+    align-items: center;                                     /* and lastly, align items in the center so they are level*/
 } 
+
+#logo {                                                       /* for the logo "collab" */
+    grid-column: 2/3;                                         /* place the logo between the second and third grid (which would really be the second column of 4 that we have) */
+    font-size: 24px;
+}
