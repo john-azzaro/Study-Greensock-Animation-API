@@ -7,5 +7,10 @@ const links = document.querySelector('.links');
 const headline = document.querySelector('.headline');
 
 const tl = new TimelineMax();                                     // 2. create a variable called "tl" and assign new TimelineMax() to it to chain multiple animations.
+                                                                  // 3. To start the timeline, call tl (i.e. creates new timelineMax) and define the elements you want to animate.
 
-tl.fromTo(hero, 1, {height: "0%"}, {height: "80%"});              // 3. To start the timeline, call tl (i.e. creates new timelineMax) and define the elements you want to animate.
+// tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut });       // This will target the hero element, and with a duration of 1 second go from 0 height to 80% height with a easeInOut effect.
+
+tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+.fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut},  )

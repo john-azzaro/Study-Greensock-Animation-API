@@ -96,15 +96,19 @@ PHASE 5: JavaScript TimelineMax with GSAP.
 
     You can also use easing effects as well.  For example, you could do this:
 
-                            ------------------------------------------------------------------
-                            
-                            ------------------------------------------------------------------
+                            ------------------------------------------------------------------------------
+                            tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut });
+                            ------------------------------------------------------------------------------
 
+    REMEMBER: If you want multiple animations, dont add ther semicolon.
 
+    What if you want to add more animations IN SEQUENCE?
 
-
-
- tl.fromTo( target:Object, duration:Number, fromVars:Object, toVars:Object, position:* ) 
+                            ------------------------------------------------------------------------------
+                            tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+                            .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+                            .fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut},  )
+                            ------------------------------------------------------------------------------
 
 
     *   To find all the methods that can be used with TimelineMax see docs: https://greensock.com/docs/TimelineMax
