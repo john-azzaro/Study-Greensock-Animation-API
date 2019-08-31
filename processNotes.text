@@ -12,7 +12,9 @@ PHASE 1: HTML
 
 PHASE 2: CSS Styles
 ===================
-4. 
+4. Style the slider so that we have a background color that is the full viewport height but also with a z-index
+   of -1 so that it is behind all the other elements.
+5. Style Nav (using flex or grid, whichever you prefer.)
 
 
 
