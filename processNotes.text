@@ -53,11 +53,34 @@ PHASE 3: Hero Style section
 
 10. style headline
 
+PHASE 4: JavaScript
+===================
+11.  Select all the elements you wish to animate with GSAP and save as variables.
+
+    const hero = document.querySelector('.hero');
+    const slider = document.querySelector('.slider');
+    const logo = document.querySelector('#logo');
+    const links = document.querySelector('.links');
+    const headline = document.querySelector('.headline');
+
+PHASE 5: JavaScript with GSAP.
+
+12. Create a variable called "tl" and assign "new TimelineMax"
+
+13. Now you can animate each element using tl and adding the methods that animate the element how you wish:
+
+
+
+https://greensock.com/docs/TimelineMax
+
+
+
 
 
 
 additional resources
 ====================
 https://zellwk.com/blog/gsap/ -- good outline of GSAP
-
+https://greensock.com/docs/TimelineMax -- docs on timelineMax
+https://greensock.com/docs/TweenMax  -- docs on tweenmax
 
