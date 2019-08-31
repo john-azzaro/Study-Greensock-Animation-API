@@ -3,8 +3,11 @@ Process Notes for Greensock Animation API (GSAP)
 
 PHASE 1: HTML
 ==============
-1. Create header with logo and links if needed.
-2. Create 
+1. Create header with logo and links if needed (burger, etc).
+2. Create section with a "hero" class containing large collaboration image (which will be a focal point for our landing page)
+   and a h1 element with a headline "Working Together Gets Results"
+3. Create a div with the class "slider".
+    *   This element will help transition the background element on top of everything.
 
 
 
