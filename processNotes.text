@@ -63,15 +63,51 @@ PHASE 4: JavaScript
     const links = document.querySelector('.links');
     const headline = document.querySelector('.headline');
 
-PHASE 5: JavaScript with GSAP.
 
+PHASE 5: JavaScript TimelineMax with GSAP.
+=========================================== 
 12. Create a variable called "tl" and assign "new TimelineMax"
+    
+    const tl = new TimelineMax();
 
 13. Now you can animate each element using tl and adding the methods that animate the element how you wish:
 
+    For example, we can use the ".fromTo method" https://greensock.com/docs/TimelineMax/fromTo() to starts at a specific spot and ends at a specfic spot.
 
 
-https://greensock.com/docs/TimelineMax
+                            tl.fromTo( target:Object, duration:Number, fromVars:Object, toVars:Object, position:* ) 
+
+
+                            ----------------------------------------------------
+                            tl.fromTo(hero, 1, {height: "0%"}, {height: "80%"});
+                            ---------------------------------------------------- 
+
+
+                                object targeted     height start
+                                    \               /
+                            tl.fromTo(hero, 1, {height: "0%"}, {height: "80%"}); 
+                                            |                          \
+                                    duration of effect                  height end
+
+
+    So what happens here is that a new timelineMax object is created (i.e. tl), and the methos ".fromTo" is chained so that we do that animation.
+    Then, we first stipulate the object targeted (i.e. "hero" from our variables above), then the duration of the effect (e.g. 1 = 1 second), then
+    you need to add two objects... the first to START and the second to FINISH the animation.  
+
+    You can also use easing effects as well.  For example, you could do this:
+
+                            ------------------------------------------------------------------
+                            
+                            ------------------------------------------------------------------
+
+
+
+
+
+ tl.fromTo( target:Object, duration:Number, fromVars:Object, toVars:Object, position:* ) 
+
+
+    *   To find all the methods that can be used with TimelineMax see docs: https://greensock.com/docs/TimelineMax
 
 
 
