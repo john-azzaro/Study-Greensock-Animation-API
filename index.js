@@ -11,4 +11,5 @@ const tl = new TimelineMax();                                     // 2. create a
 
 tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })       // This will target the hero element, and with a duration of 1 second go from 0 height to 80% height with a easeInOut effect.
 .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
-.fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2");
+.fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2")
+.fromTo(headline, 1.2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=1.2");
