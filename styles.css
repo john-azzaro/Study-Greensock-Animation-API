@@ -26,3 +26,19 @@ nav {
     grid-column: 2/3;                                         /* place the logo between the second and third grid (which would really be the second column of 4 that we have) */
     font-size: 24px;
 }
+
+.links {                                                      /* for the links*/
+    justify-self: end;                                        /* justify the position of the links at the end of the column (i.e. far right). */ 
+}
+
+.hero img {                                                   /* for the main hero image...*/
+    width: 100%;                                               /* setting the height and width to 100% will stick the image to the size of the container so we know where we are at with it. */
+    height: 100%;
+}
+
+section {                                                     /* For the section that holds the collab image and the subtitles ...*/
+    display: flex;                                            /* set display to felx so everything is side by side...*/
+    height: 80vh;                                             /* and set the height so its 80% of the viewport (remember that the nav takes 10% already) */
+    justify-content: center;                                  /* centering the image */
+    align-items: center;                                      /* centering the image */       
+}

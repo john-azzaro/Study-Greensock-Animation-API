@@ -17,6 +17,10 @@ PHASE 2: CSS Styles
 5. Style Nav (using flex or grid, whichever you prefer.)
 
 
+PHASE 3: Style section
+======================
+6. For the section, use flex to position the hero image in the center.
+7. For the hero image, constrain the image to 100% height and width so you you know what you have to work with in the container.
 
 
 
