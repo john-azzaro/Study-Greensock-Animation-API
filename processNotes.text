@@ -106,9 +106,35 @@ PHASE 5: JavaScript TimelineMax with GSAP.
 
                             ------------------------------------------------------------------------------
                             tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
-                            .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
-                            .fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut},  )
+                            .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})       <== chained method with width animation
+                            .fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut})         <== chained method with sliding background
                             ------------------------------------------------------------------------------
+
+    What if you want to execute animations AT THE SAME TIME?  
+    
+                            * To execute chained methods at different times (even though they may be farther down the chain),
+                              you need to use "-=X.X" where X.X is the seconds BEFORE that occured that you want to execute the animation.
+
+                              For example, suppose you have a chain of .fromTo methods with the following effect duration times.
+
+                              hero, 1      (height)
+                              hero, 1.2    (width)
+                              slider, 1.4
+
+                              If you want the slider animation to execute in order, simply leave the "-=X.X" out...
+                              If you want the slider animation to execute at the same time as the previous hero width animation, 
+                                you would need to add "-=1.2".
+                              If you want the slider animation to execute at the start (i.e. hero height), you would need to add 1.4 seconds to 
+                              the 1.2 seconds you already have (i.e. "-=2.4")
+                              
+                              
+                           ------------------------------------------------------------------------------
+                            tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+                            .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})      
+                            .fromTo(slider, 1.4, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2")        
+                            ------------------------------------------------------------------------------
+
+                            * Whats happens here is that everything is that
 
 
     *   To find all the methods that can be used with TimelineMax see docs: https://greensock.com/docs/TimelineMax
