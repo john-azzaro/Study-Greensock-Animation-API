@@ -33,7 +33,13 @@ nav {
 
 .hero img {                                                   /* for the main hero image...*/
     width: 100%;                                               /* setting the height and width to 100% will stick the image to the size of the container so we know where we are at with it. */
-    height: 100%;
+    height: 100%;                                               
+    object-fit: cover;                                          /* and setting object fit to cover, it will show the area we have for hero (i.e. 60%/100%) but it will not be distorted. */
+}
+
+.hero {                                                       /* from the section setting justify content and align items, the image will cover... you need to adjust the hero section */
+    height: 70%;
+    width: 100%;
 }
 
 section {                                                     /* For the section that holds the collab image and the subtitles ...*/
