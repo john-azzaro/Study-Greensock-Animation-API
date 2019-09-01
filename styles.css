@@ -64,9 +64,13 @@ section {                                                     /* For the section
 .headline {
     position: absolute;                                      /* set posiotion to absolute so it is outside normal flow and we can move it where-ever we want */
     top: 70%;
-    left: 20%;
-    font-size: 100px;
-    transform: translate(-20%, -70%);                          /* reposition the text */     
+    left: 10%;
+    font-size: 90px;
+    transform: translate(-20%, -60%);                          /* reposition the text */     
     color: white;
     z-index: 1;                                                /* added when we set opactiy tint and want to keep the headline in a good solid white color untinted.*/
+}
+
+.area2{
+    height: 100vh;
 }
