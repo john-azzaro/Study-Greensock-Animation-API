@@ -8,9 +8,14 @@ See it Live: https://john-azzaro.github.io/Study-Greensock-Animation-API/
 * [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
 * [What libraries can you use with GSAP?](#What-libraries-can-you-use-with-GSAP)
 * [How do you install the GSAP libraries](#How-do-you-install-the-GSAP-libraries)
-* [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
-* [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
-* [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
+* [What is a tween?](#What-is-a-tween)
+* [What methods can you use with Tweens?](#What-methods-can-you-use-with-Tweens)
+* [What does a basic example using TweenMax look like?](#What-does-a-basic-example-using-TweenMax-look-like)
+* [What is a timing function?](#What-is-a-timing-function)
+* [How do you use TimelineMax to chain Tweens together?](#How-do-you-use-TimelineMax-to-chain-Tweens-together)
+* [What is a tween?](#What-is-a-tween)
+* [What is a tween?](#What-is-a-tween)
+* [What is a tween?](#What-is-a-tween)
 
 
 <br>
@@ -60,12 +65,14 @@ TweenMax.method(element, duration, properties-to-animate)
 <br>
 
 ## What methods can you use with Tweens?
-To find all of the available methods for TweenMax, you can checkout the documentation: https://greensock.com/docs/TweenMax
-However, some interesting animations you can checkout include:
+The methods available to you through the GSAP API are varied and it is up to you to determine what would be best for you
+and the effect you want to achieve.  However, there a few methods that should be good to know:
 * **delay**, which delays the animation in seconds before executing.
 * **fromTo**, that allows you to define the starting and ending values.
 * **set**, which immediately sets the properties of the target (i.e. no time duration).
 * **to**, which animates to a specified destination value (see below).
+
+To find more methods, see the TweenMax documentation: https://greensock.com/docs/TweenMax
 
 <br>
 
@@ -73,11 +80,11 @@ However, some interesting animations you can checkout include:
 First, you need to select an element from the DOM in order to animate it.  To do this, you can use a query selector and store as
 a const called "logo".
 ```JavaScript
-const logo = document.querySelector('#logo');
+    const logo = document.querySelector('#logo');
 ```
 Then, you simply call the "TweenMax" constructor and add your method and animation details.
 ```JavaScript
-TweenMax.to(logo, 2, {x: 100})
+    TweenMax.to(logo, 2, {x: 100})
 ```
 In the example above, we want to animate a logo so that when the page loads, it will translate
 100 pixels along the x-axis(i.e. go right).  So, to do this we use the TweenMax constructor, add the ```.to``` method with will
@@ -85,3 +92,44 @@ animate to a specified destination value (which will be 100px on the x-axis).  I
 then the duraction (i.e. 2 seconds), and then inside an object you specify the location you want to animate to, specificially 100px 
 along the x-axis.
 
+<br>
+
+## What is a timing function?
+A timing function uses the ```ease``` property to write a timing function.  GSAP provides easing variables from Power0 - Power4 which
+tells GSAP how strong the easing needs to be.  To find the right timing function, you can use the easing visualize below:
+
+Easing visualizer: https://greensock.com/ease-visualizer
+
+<br>
+
+## How do you use TimelineMax to chain Tweens together?
+The TimelineMax constructor lets you chain multiple tweens together.  When you chain tweens together, they will execute in the order in which 
+they are chained together.  
+
+To use TimelineMax, first you need to create an instance of TimelineMax:
+```JavaScript
+    const tl = new TimelineMax();
+``` 
+
+Then, you simple chain your methods to the ```tl``` variable and create your chained tweens.
+```JavaScript
+const tl = new TimelineMax();
+
+tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+.fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut});
+```
+Each follows from the other and each animation executes one after the other.  However, suppose you wanto your logo (at the end), 
+to animate at the same time as the second hero animation.  To do this, you just add a ```-=``` and the amount of seconds the second
+hero animation uses.  So for example, if you want the logo to appear at the same time as the second hero animation, do this:
+```JavaScript
+tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+.fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=1.2");
+```
+And if you wanted to logo to appear at the start when the first hero animation occurs, add that time as well:
+```JavaScript
+tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+.fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=2.2");
+```
