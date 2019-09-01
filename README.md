@@ -47,7 +47,7 @@ include the scripts in your HTML file before your JavaScript file.  In this part
 <br>
 
 ## What is a tween?
-A "tween" is a *SINGLE* movement in an animation. The syntax for a tween is as follows:\
+A "tween" is a *SINGLE* movement in an animation. The syntax for a tween is as follows:
 ```
 TweenMax.method(element, duration, properties-to-animate)
 ```
@@ -57,11 +57,17 @@ TweenMax.method(element, duration, properties-to-animate)
 * **duration** is the length of time you want to animate your element in seconds.
 * **properties-to-animate** is an object of properties you wish to animate.
 
-
-
-
+## What are some basic examples using TweenMax?
+First, you need to select an element from the DOM in order to animate it.  To do this, you can use a query selector and store as
+a const called "logo".
 ```JavaScript
 const logo = document.querySelector('#logo');
-TweenMax.to(logo, 9, {x: 100, ease: Power2.easeInOut })
 ```
-In the example above, 
+Then, you simple call "TweenMax", which is the library we are currently using and add your method and animation details.
+In the following example, we want to animate a logo so that when the page loads, it will translate
+100 pixels along the x-axis(i.e. go right).
+```JavaScript
+TweenMax.to(logo, 2, {x: 100})
+```
+
+
