@@ -4,6 +4,11 @@ See it Live: https://john-azzaro.github.io/Study-Greensock-Animation-API/
 ## Study Contents:
 
 * [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
+* [What libraries can you use with GSAP?](#What-libraries-can-you-use-with-GSAP)
+* [How do you install GSAP?](#How-do-you-install-GSAP)
+* [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
+* [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
+* [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
 
 
 <br>
