@@ -13,10 +13,7 @@ See it Live: https://john-azzaro.github.io/Study-Greensock-Animation-API/
 * [What does a basic example using TweenMax look like?](#What-does-a-basic-example-using-TweenMax-look-like)
 * [What is a timing function?](#What-is-a-timing-function)
 * [How do you use TimelineMax to chain Tweens together?](#How-do-you-use-TimelineMax-to-chain-Tweens-together)
-* [What is a tween?](#What-is-a-tween)
-* [What is a tween?](#What-is-a-tween)
-* [What is a tween?](#What-is-a-tween)
-
+* [Screenshots](#Screenshots)
 
 <br>
 
@@ -111,7 +108,7 @@ To use TimelineMax, first you need to create an instance of TimelineMax:
     const tl = new TimelineMax();
 ``` 
 
-Then, you simple chain your methods to the ```tl``` variable and create your chained tweens.
+Then, you simply chain your methods to the ```tl``` variable and create your chained tweens.
 ```JavaScript
 const tl = new TimelineMax();
 
@@ -120,8 +117,8 @@ tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
 .fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut});
 ```
 Each follows from the other and each animation executes one after the other.  However, suppose you wanto your logo (at the end), 
-to animate at the same time as the second hero animation.  To do this, you just add a ```-=``` and the amount of seconds the second
-hero animation uses.  So for example, if you want the logo to appear at the same time as the second hero animation, do this:
+to animate at the same time as the second hero animation.  To do this, you just add a ```"-=X"``` where X is the amount of seconds the previous
+element uses.  So for example, if you want the logo to appear at the same time as the second hero animation, do this:
 ```JavaScript
 tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
 .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
@@ -133,3 +130,11 @@ tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
 .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
 .fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=2.2");
 ```
+
+<br>
+
+## Screenshots
+
+![gsap1](https://user-images.githubusercontent.com/37447586/64072089-d5969e00-cc3d-11e9-8e6f-fe2bce80ddae.png)
+![gsap2](https://user-images.githubusercontent.com/37447586/64072090-d5969e00-cc3d-11e9-8a11-c9e2c14a7524.png)
+![gsap3](https://user-images.githubusercontent.com/37447586/64072091-d5969e00-cc3d-11e9-9a0c-76c588159aa3.png)
