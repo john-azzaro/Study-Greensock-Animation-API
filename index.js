@@ -1,6 +1,6 @@
 'use strict';
 
-const hero = document.querySelector('.hero');                     // 1. Create selectors for the elements you wish to animate with GSAP.
+const hero = document.querySelector('.hero');                     // 1. Create selectors for the elements you wish to animate with GSAP (in this case, we just have all of them for future use).
 const slider = document.querySelector('.slider');
 const logo = document.querySelector('#logo');
 const links = document.querySelector('.links');

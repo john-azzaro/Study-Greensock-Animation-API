@@ -1,6 +1,8 @@
 # Greensock Animation API Study
 See it Live: https://john-azzaro.github.io/Study-Greensock-Animation-API/
 
+<br>
+
 ## Study Contents:
 
 * [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
@@ -27,7 +29,7 @@ TweenLite and TimlineMax has more features than TimelineLite.
 <br>
 
 ## How do you install GSAP?
-To install your desired GSAP libraries, which for all intents and purposes is TweenMax and TimelineMax, you sinply need to 
+To install your desired GSAP libraries, which for all intents and purposes is TweenMax and TimelineMax, you simply need to 
 include the scripts in your HTML file before your JavaScript file.
 ```HTML
       <script
