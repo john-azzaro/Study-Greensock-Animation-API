@@ -73,13 +73,13 @@ and the effect you want to achieve.  However, there a few methods that should be
 
 | **GSAP Library:**                            | **Description:**                             |
 | ---------------------------------------- | ----------------------------------------------|
-|   **.delay**            |   Delays the animation in seconds before executing.            |
+|   **.delay**            |   **Delays the animation in seconds before executing.**            |
 |                          |   *TweenMax.delay( value:Number );*           |
-|   **.fromTo**            |   Allows you to define the starting and ending values            | 
+|   **.fromTo**            |   **Allows you to define the starting and ending values.**            | 
 |                          |  *TweenMax.fromTo( target:Object, duration:Number, fromVars:Object, toVars:Object );*               |
-|   **.set**            |   Immediately sets the properties of the target (i.e. no time duration).            |
+|   **.set**            |   **Immediately sets the properties of the target (i.e. no time duration).**            |
 |                          |  *TweenMax.set( target:Object, vars:Object );*               |
-|   **.to**            |   Animates to a specified destination value (see below)            | 
+|   **.to**            |   **Animates to a specified destination value (see below).**            | 
 |                          |  *Tweenmax.to( target:Object, duration:Number, vars:Object );*               |
 
 To find more methods you can use, see the TweenMax and TimelineMax documentatyion.
@@ -108,6 +108,8 @@ along the x-axis.
 A timing function uses the ```ease``` property to write a timing function.  GSAP provides easing variables from Power0 - Power4 which
 tells GSAP how strong the easing needs to be.  To find the right timing function, you can use the easing visualize below:
 
+| **GSAP App:**                            | **Link:**                             |
+| ---------------------------------------- | ----------------------------------------------|
 |   **Easing visualizer:**            |    https://greensock.com/ease-visualizer           |
 
 
