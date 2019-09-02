@@ -126,25 +126,25 @@ To use TimelineMax, first you need to create an instance of TimelineMax:
 
 Then, you simply chain your methods to the ```tl``` variable and create your chained tweens.
 ```JavaScript
-const tl = new TimelineMax();
+    const tl = new TimelineMax();
 
-tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
-.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
-.fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut});
+    tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+    .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+    .fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut});
 ```
 Each follows from the other and each animation executes one after the other.  However, suppose you wanto your logo (at the end), 
 to animate at the same time as the second hero animation.  To do this, you just add a ```"-=X"``` where X is the amount of seconds the previous
 element uses.  So for example, if you want the logo to appear at the same time as the second hero animation, do this:
 ```JavaScript
-tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
-.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
-.fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=1.2");
+    tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+    .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+    .fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=1.2");
 ```
 And if you wanted to logo to appear at the start when the first hero animation occurs, add that time as well:
 ```JavaScript
-tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
-.fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
-.fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=2.2");
+    tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+    .fromTo(hero, 1.2, {width:"100%"}, {width: "80%", ease: Power2.easeInOut})
+    .fromTo(logo, 2, {opacity: 0, x: 30}, {opacity: 1, x: 0, ease: Power2.easeInOut}, "-=2.2");
 ```
 
 <br>
