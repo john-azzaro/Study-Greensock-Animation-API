@@ -71,9 +71,13 @@ TweenMax.method(element, duration, properties-to-animate)
 The methods available to you through the GSAP API are varied and it is up to you to determine what would be best for you
 and the effect you want to achieve.  However, there a few methods that should be good to know:
 
-| **GSAP Library:**                            | **Link:**                             |
-| ---------------------------------------- | ----------------------------------------------|
-|               |               |
+| **GSAP Library:**                            | **Description:**                             |                        |
+| ---------------------------------------- | ----------------------------------------------|----------------------------------------------|
+|   **.delay()**            |   Delays the animation in seconds before executing.            |   TweenMax.delay( value:Number );                     |
+|   **.fromTo()**            |   Allows you to define the starting and ending values            |                        |
+|   **.**            |   Immediately sets the properties of the target (i.e. no time duration).            |                        |
+|   **.to()**            |   Animates to a specified destination value (see below)            |                        |
+
 
 
 * **delay**, which delays the animation in seconds before executing.
