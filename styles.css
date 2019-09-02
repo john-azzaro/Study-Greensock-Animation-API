@@ -45,7 +45,7 @@ nav {
 
 .hero::after {                                               /* if you want to alter the image (or photoshop it), use ::after to generate another div (this just generates a new div) */
     content: "";                                             /* the content here is blank for now...*/
-    background: black;                                     /* a black background will be the base for the image tint.*/
+    background: linear-gradient(to right, rgb(61, 63, 75), rgb(53, 54, 43));;                                     /* a black background will be the base for the image tint.*/
     width: 100%;                                             /* and be the whole height and width of the image....*/
     height: 100%;
     position: absolute;                                      /* and be positioned directly over the hero image (i.e. absolute, left 0, top 0.*/
