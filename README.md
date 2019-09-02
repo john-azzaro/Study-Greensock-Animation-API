@@ -28,6 +28,12 @@ headline and an image.  Using GSAP, the image and headline use a simple animatio
 There are 4 libraries to choose from- TweenLite, TweenMax, TimelineLite, and TimelineMax.  TweenMax has more features than
 TweenLite and TimlineMax has more features than TimelineLite.
 
+| **GSAP Library:**                            | **Link:**                             |
+| ---------------------------------------- | ----------------------------------------------|
+|  TweenMax                |  https://greensock.com/docs/TweenMax                |
+|  TimelineMax                |  https://greensock.com/docs/TimelineMax                |
+
+
 <br>
 
 ## How do you install the GSAP libraries?
@@ -64,6 +70,12 @@ TweenMax.method(element, duration, properties-to-animate)
 ## What methods can you use with Tweens?
 The methods available to you through the GSAP API are varied and it is up to you to determine what would be best for you
 and the effect you want to achieve.  However, there a few methods that should be good to know:
+
+| **GSAP Library:**                            | **Link:**                             |
+| ---------------------------------------- | ----------------------------------------------|
+|               |               |
+
+
 * **delay**, which delays the animation in seconds before executing.
 * **fromTo**, that allows you to define the starting and ending values.
 * **set**, which immediately sets the properties of the target (i.e. no time duration).
