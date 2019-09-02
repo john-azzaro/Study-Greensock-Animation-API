@@ -116,8 +116,8 @@ tells GSAP how strong the easing needs to be.  To find the right timing function
 <br>
 
 ## How do you use TimelineMax to chain Tweens together?
-The TimelineMax constructor lets you chain multiple tweens together.  When you chain tweens together, they will execute in the order in which 
-they are chained together.  
+First, add a TimelineMax constructor.  The TimelineMax constructor lets you chain multiple tweens together.  When you chain tweens together,
+they will execute in the order in which they are chained together.  
 
 To use TimelineMax, first you need to create an instance of TimelineMax:
 ```JavaScript
