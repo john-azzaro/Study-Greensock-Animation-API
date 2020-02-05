@@ -34,11 +34,18 @@ headline and an image.  Using GSAP, the image and headline use a simple animatio
 There are a few libraries you can choose from for tweens and timelines, the lite and max. Max has a *lot* more features and as long
 as you dont have an constraints around the lite vs max, just use max.
 
+<br>
 
 ### Make sure you run the tweenMax and TimelineMax BEFORE your JS file.
 -----------
 I tend to use defer on my JavaScript files so inserting the scripts after is not a problem. However, if you do not use defer, just insert the script 
 at the very bottom of the HTML document.
+
+<br>
+
+### Use the ease visualizer for spot-on transition effects.
+------------
+ With the visualizer, you can get a good idea of sample transitions as well as configure your own.
 
 </dd>
 </dl>
