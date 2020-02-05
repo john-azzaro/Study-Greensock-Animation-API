@@ -29,8 +29,11 @@ headline and an image.  Using GSAP, the image and headline use a simple animatio
 <dl> 
 <dd>
 
-### 
+### Use tweenMax and TimelineMax
 ----------
+There are a few libraries you can choose from for tweens and timelines, the lite and max. Max has a *lot* more features and as long
+as you dont have an constraints
+
 
 </dd>
 </dl>
