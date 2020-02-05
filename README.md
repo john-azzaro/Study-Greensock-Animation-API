@@ -24,6 +24,21 @@ headline and an image.  Using GSAP, the image and headline use a simple animatio
 
 <br>
 
+## What are the key takeaways from the Greensock study?
+
+<dl> 
+<dd>
+
+### 
+----------
+
+</dd>
+</dl>
+
+
+
+
+
 ## What libraries can you use with GSAP?
 There are 4 libraries to choose from- TweenLite, TweenMax, TimelineLite, and TimelineMax.  TweenMax has more features than
 TweenLite and TimlineMax has more features than TimelineLite.
