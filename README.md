@@ -3,6 +3,13 @@ See it Live: https://john-azzaro.github.io/Study-Greensock-Animation-API/
 
 <br>
 
+## What is Greensock Animation API Study?
+The "Greensock Animation API Study" is an exploration of the Greensock Animation API (GSAP).  GSAP is a very handy
+animation library that helps you make preformant animations.  In this study, you have a simple landing page with a 
+headline and an image.  Using GSAP, the image and headline use a simple animation to reveal on load.
+
+<br>
+
 ## Study Contents:
 
 * [What is Greensock Animation API Study?](#What-is-Greensock-Animation-API-Study)
@@ -15,13 +22,6 @@ See it Live: https://john-azzaro.github.io/Study-Greensock-Animation-API/
 * [What is a timing function?](#What-is-a-timing-function)
 * [How do you use TimelineMax to chain Tweens together?](#How-do-you-use-TimelineMax-to-chain-Tweens-together)
 * [Screenshots](#Screenshots)
-
-<br>
-
-## What is Greensock Animation API Study?
-The "Greensock Animation API Study" is an exploration of the Greensock Animation API (GSAP).  GSAP is a very handy
-animation library that helps you make preformant animations.  In this study, you have a simple landing page with a 
-headline and an image.  Using GSAP, the image and headline use a simple animation to reveal on load.
 
 <br>
 
